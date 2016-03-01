@@ -25,7 +25,7 @@ main:
  			andi $t2, $t0, 0x1
  			beq $t2, $zero, less
  				add $s1, $t2
- 				addi $s1, $s1, 1
+ 				addi $s1, $s1, 4
  			less:
  				add $s0, $t2
  				addi $s0, $s0, 4
