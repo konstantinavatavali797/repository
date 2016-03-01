@@ -18,7 +18,7 @@ main:
         addiu      $s1, $zero, 0     # sum of negative even values starts as 0
 
        loop:
-       		addi $t1, $a1, 1
+       		addi $t1, $a1, 4
        		add $t1, $s3, $a1
        		lb $t0, 0($t1)
  			slt $t0, $a0, exitloop
@@ -28,7 +28,7 @@ main:
  				addi $s1, $s1, 1
  			less:
  				add $s0, $t2
- 				addi $s0, $s0, 1
+ 				addi $s0, $s0, 4
  			j loop
  	  extiloop:
  				
